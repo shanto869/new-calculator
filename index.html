@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container text-center">
+        <h1 class="my-5">My Calculator</h1>
+
+        <div class="calculator">
+            <!-- calculator head -->
+            <div class="cal-head">
+                <input id="result-field" type="text" maxlength="15">
+            </div>
+
+            <!-- calculator body -->
+            <div class="cal-body mb-5" id="calculator">
+                <div>
+                    <input type="button" value="AC" class="btn btn-info" onclick="clearAll()">
+                    <input type="button" value="(" class="btn btn-info" onclick="insertNumber('(')">
+                    <input type="button" value=")" class="btn btn-info" onclick="insertNumber(')')">
+                    <input type="button" value="/" class="btn btn-info" onclick="insertNumber('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" class="btn btn-info" onclick="insertNumber(7)">
+                    <input type="button" value="8" class="btn btn-info" onclick="insertNumber(8)">
+                    <input type="button" value="9" class="btn btn-info" onclick="insertNumber(9)">
+                    <input type="button" value="X" class="btn btn-info" onclick="insertNumber('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" class="btn btn-info" onclick="insertNumber(4)">
+                    <input type="button" value="5" class="btn btn-info" onclick="insertNumber(5)">
+                    <input type="button" value="6" class="btn btn-info" onclick="insertNumber(6)">
+                    <input type="button" value="-" class="btn btn-info" onclick="insertNumber('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" class="btn btn-info" onclick="insertNumber(1)">
+                    <input type="button" value="2" class="btn btn-info" onclick="insertNumber(2)">
+                    <input type="button" value="3" class="btn btn-info" onclick="insertNumber(3)">
+                    <input type="button" value="+" class="btn btn-info" onclick="insertNumber('+')">
+                </div>
+                <div class="pb-4">
+                    <input type="button" value="0" class="btn btn-info" onclick="insertNumber(0)">
+                    <input type="button" value="." class="btn btn-info" onclick="insertNumber('.')">
+                    <input type="button" value="DEL" class="btn btn-info" onclick="deleteNumber('DEL')">
+                    <input type="button" value="=" class="btn btn-info" onclick="answer()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
